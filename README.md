@@ -1,42 +1,58 @@
-# Simulación de un Sistema de Colas en un Aeropuerto
+# Simulation of a Queueing System at an Airport
 
-## Descripción del Proyecto
-Este repositorio contiene una simulación de un sistema de colas en un aeropuerto, modelado en R. Se simulan diferentes etapas del proceso de embarque de pasajeros: llegada, check-in, seguridad, control de pasaporte y embarque. La simulación emplea distribuciones de probabilidad para representar tiempos de servicio y llegadas, incluyendo el uso de una normal truncada y una distribución Weibull.
+## Project Description
 
-## Requisitos
-Para ejecutar el código, necesitas tener instalado R. Puedes instalar R desde:
+This repository includes 8 previous versions ranging from the most primitive to the final version included here. The seventh version incorporates Monte Carlo methods for enhanced simulation accuracy.
+
+This repository includes 8 previous versions ranging from the most primitive to the final version included here.
+
+This repository contains a simulation of a queueing system at an airport, modeled in R. Different stages of the passenger boarding process are simulated: arrival, check-in, security, passport control, and boarding. The simulation employs probability distributions to represent service times and arrivals, including the use of a truncated normal and a Weibull distribution.
+
+## Requirements
+
+To run the code, you need to have R installed. You can install R from:
 [R Project](https://www.r-project.org/)
 
-## Estructura del Código
-- **Generación de muestras:** Uso del algoritmo Box-Muller para generar valores de distribuciones normales truncadas.
-- **Definición de eventos:** Modelado de las diferentes fases del proceso aeroportuario.
-- **Lógica de simulación:** Control de eventos en base a un reloj de simulación.
-- **Visualización de resultados:** Histogramas y pruebas de bondad de ajuste para evaluar el modelo.
+## Code Structure
 
-## Ejecución
-Para ejecutar la simulación, simplemente abre `Version_final.R` en R y corre el script completo.
+- **Sample generation:** Use of the Box-Muller algorithm to generate values from truncated normal distributions.
+- **Event definition:** Modeling of different phases of the airport process.
+- **Simulation logic:** Event control based on a simulation clock.
+- **Results visualization:** Histograms and goodness-of-fit tests to evaluate the model.
+
+## Execution
+
+To run the simulation, simply open `Version_final.R` in R and execute the full script.
+
 ```r
 source("Version_final.R")
 ```
 
-## Resultados Esperados
-Al finalizar la simulación, se imprimirá en pantalla el estado final de cada cola y cuántos pasajeros han llegado a cada fase del sistema.
+## Expected Results
 
-Ejemplo de salida:
+At the end of the simulation, the final state of each queue and how many passengers have reached each phase of the system will be printed on the screen.
+
+Example output:
+
 ```
-En el instante de parada había en la primera etapa X personas
-En el instante de parada había en la segunda etapa Y personas
+At the stopping moment, there were X people in the first stage
+At the stopping moment, there were Y people in the second stage
 ...
 ```
 
-## Mejoras Futuras
-- Implementar visualización dinámica del sistema de colas.
-- Explorar variaciones en los tiempos de servicio para analizar sensibilidad.
-- Comparar con modelos de simulación en Python.
+## Future Improvements
 
-## Autor
-Este proyecto fue desarrollado como parte de un trabajo de simulación de colas.
+- Implement dynamic visualization of the queueing system.
+- Explore variations in service times to analyze sensitivity.
+- Compare with simulation models in Python.
 
-## Licencia
-Este proyecto es de uso libre bajo la licencia MIT.
+## Author
+
+This project was developed as part of a queueing system simulation task.
+
+## License
+
+This project is freely available under the MIT license.
+
+This repository includes 8 previous versions ranging from the most primitive to the final version included here.
 
